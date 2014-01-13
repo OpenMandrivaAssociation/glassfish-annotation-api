@@ -1,4 +1,4 @@
-%_javapackages_macros
+%{?_javapackages_macros:%_javapackages_macros}
 %global namedreltag %{nil}
 %global namedversion %{version}%{?namedreltag}
 %global oname javax.annotation-api
@@ -55,3 +55,23 @@ cp -p target/classes/META-INF/LICENSE.txt .
 
 %files javadoc -f .mfiles-javadoc
 %doc LICENSE.txt
+
+%changelog
+* Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* Mon Jul 08 2013 gil cattaneo <puntogil@libero.it> 1.2-4
+- switch to XMvn
+- minor changes to adapt to current guideline
+
+* Sun May 26 2013 gil cattaneo <puntogil@libero.it> 1.2-3
+- rebuilt with spec-version-maven-plugin support
+
+* Wed May 22 2013 gil cattaneo <puntogil@libero.it> 1.2-2
+- fixed manifest
+
+* Tue May 07 2013 gil cattaneo <puntogil@libero.it> 1.2-1
+- update to 1.2
+
+* Tue Apr 02 2013 gil cattaneo <puntogil@libero.it> 1.2-0.1.b04
+- initial rpm
