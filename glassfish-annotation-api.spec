@@ -8,7 +8,7 @@ Release:       5.0%{?dist}
 Summary:       Common Annotations API Specification (JSR 250)
 License:       CDDL or GPLv2 with exceptions
 # http://jcp.org/en/jsr/detail?id=250
-URL:           http://glassfish.java.net/
+URL:           https://glassfish.java.net/
 # svn export https://svn.java.net/svn/glassfish~svn/tags/javax.annotation-api-1.2/ glassfish-annotation-api-1.2
 # tar czf glassfish-annotation-api-1.2-src-svn.tar.gz glassfish-annotation-api-1.2
 Source0:       %{name}-%{namedversion}-src-svn.tar.gz
